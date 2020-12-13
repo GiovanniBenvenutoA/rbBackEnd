@@ -45,6 +45,7 @@ public class RbController {
 			
 			response.setMensaje("Error usuario y/o clave incorrectos");
 		}
+		log.info("retorno"+response);
 		return response;
 		
 	}
