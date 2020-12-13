@@ -36,13 +36,13 @@ public class RbController {
 		Authentication auth = new Authentication();
 		auth =rbImplement.validationAuth(idNumber, password);
 		if(auth!=null) {
-			log.info("exito");
+			
 			response.setValor(true);
 			response.setMensaje("Ingreso Exitoso");
 			response.setAuth(auth);
 		}else {
 			response.setValor(false);
-			log.info("fracaso");
+			
 			response.setMensaje("Error usuario y/o clave incorrectos");
 		}
 		return response;
